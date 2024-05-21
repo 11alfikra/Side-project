@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solty</title>
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><img src="images/logo.png" style="width: 45px; height: 45px;"></a>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#banner" onclick="toggleMenu();"><b>Home</b></a></li>
+                <li><a href="#menu" onclick="toggleMenu();"><b>Menu</b></a></li>
+                <li><a href="#details" onclick="toggleMenu();"><b>Details</b></a></li>
+                <li><a href="#contact" onclick="toggleMenu();"><b>Contact</b></a></li>
+                <li><a href="#login" onclick="toggleMenu();"><b>Login</b></a></li>
+            </ul>
+        </header>
+        <section class="banner" id="banner">
+            <div class="content">
+                <h2></h2>
+                <p></p>
+            </div>
+        </section> 
+
+        <section class="menu" id="menu">
+            <div class="title">
+                <h2 class="titleText"><span>M</span>enu</h2>
+                <h3 style="color: #8c1a1d;"><b>FEEL FREE TO ORDER US</b></h3><br>
+                <h2 style="color: #8c1a1d;"><b>SOLTY</b></h2>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/DSC02688.JPG">
+                    </div>
+                    <div class="text">
+                        <h3><b>Ayam Geprek</b></h3>
+                        <p style="text-align: center;">Rice and fried chicken crushed with hot spicy homemade chilli sauce.<a href="#"class="btn">Order</a></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/DSC02666.JPG">
+                    </div>
+                    <div class="text">
+                        <h3><b>Orange Chicken</b></h3>
+                        <p style="text-align: center;">Rice and fried chicken with fresh sweet and sour orange squash sauce.<a href="https://docs.google.com/forms/d/e/1FAIpQLScNyCDibZqPPlNvGWoJ5sDKrVrUC6rA_K1MjXyut8QYfZg6Vw/viewform?usp=sf_link"class="btn">Order</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScNyCDibZqPPlNvGWoJ5sDKrVrUC6rA_K1MjXyut8QYfZg6Vw/viewform?usp=sf_link" class="btn">Order Now</a>
+                <a href="images/Menu.png" class="btn2" style="color: #8c1a1d;">See All Menu</a>
+            </div>
+        </section>
+
+        <section class="details" id="details">
+            <div class="title white">
+                <h2 class="titleText"><span>D</span>etails</h2>
+                <p></p>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/download.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Instagram</h3>
+                        <div class="title">
+                            <a href="https://www.instagram.com/solty.ic/"class="btn"><span>F</span>ollow</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/toko.png">
+                    </div>
+                    <div class="text">
+                        <h3>Open Hours</h3>
+                        <img src="images/OH1.png">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/maps.png">
+                    </div>
+                    <div class="text">
+                        <h3>Maps</h3>
+                        <div class="title">
+                            <a href="https://www.google.co.id/maps/place/G%C3%BCndo%C4%9Fumu+Cd.,+%C3%9Csk%C3%BCdar%2F%C4%B0stanbul,+Turki/@41.0172596,29.0157793,17z/data=!3m1!4b1!4m5!3m4!1s0x14cab82160aea36d:0xa4d6e7bc3736068e!8m2!3d41.0172596!4d29.017968" class="btn"><span>D</span>irection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="title white">
+                <h2 class="titleText"><span>C</span>ontact</h2>
+                    <p style="color: white; text-align: center;">For general inquiry & order, Whatsapp our hotline at</p>
+                <div class="title"><br>
+                    <a style="color: white;" href="https://wa.me/905541442583" target="_blank"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+                </div>
+                <div class="title">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1kXRhzQwutS3YlwcWi5KqkCsa65BUKn4yfHTflJWILO8Z3w/viewform?usp=sf_link" class="btn"><span>+</span>&ensp;Feedback</a>
+                </div>            
+            </div>
+        </section>
+        
+        <div class="copyrightText">
+            <p>Soly Website</p>
+        </div>
+        <script type="text/javascript"> 
+            window.addEventListener('scroll', function(){
+                const header = document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0);
+             });
+            function toggleMenu(){
+                const menuToggle = document.querySelector('.menuToggle');
+                const navigation = document.querySelector('.navigation');
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+            function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            }
+            function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
