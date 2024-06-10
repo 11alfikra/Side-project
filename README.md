@@ -20,4 +20,4 @@
 19. purple
 20. dark
 21. flash
-22. 
+22. bright
