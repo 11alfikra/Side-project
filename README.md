@@ -17,7 +17,4 @@
 16. blue
 17. red
 18. green
-19. purple
-20. dark
-21. flash
 
