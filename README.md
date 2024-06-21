@@ -4,5 +4,3 @@
 3. back-end ehancement
 4. front-end ehancement
 5. Faktanya
-6. Myth
-
