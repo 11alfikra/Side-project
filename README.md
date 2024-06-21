@@ -5,7 +5,4 @@
 4. front-end ehancement
 5. Faktanya
 6. Myth
-7. Physic
-8. Kimia
-9. Math
 
